@@ -1,0 +1,24 @@
+.buttons{ right: 5%; bottom: 22%; }
+
+.analogic_left{ top: 0px; bottom: 0px; left: 7%; }
+.analogic_right{ bottom: 5%; right: 26%; }
+.arrow{ bottom: 4% ; left: 24%; }
+
+.group_l{ left: 3% ; top: 3%; }
+.group_r{ right: 5% ; top: 3%; }
+
+.btn_painel{ top: 20%; left: 0px; right: 0px;  }
+
+.btn:active{ opacity: 0.5; }
+
+
+.group-actions{
+    bottom: 25%;
+    right: 4%;
+}
+
+.x{ left: 0px; right: 0px;}
+.a{ top: 0px; bottom: 0px; right: 0px }
+.b{ left: 0px; right: 0px; bottom: 0px; }
+.y{ top: 0px; bottom: 0px; }
+

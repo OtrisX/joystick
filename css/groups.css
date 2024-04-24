@@ -1,0 +1,26 @@
+.group-actions{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    font-weight: bold;
+}
+
+.group-actions *{
+    position: absolute;
+    margin: auto;
+}
+
+.group-actions::before{
+    content: '';
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border: solid 3px white;
+}

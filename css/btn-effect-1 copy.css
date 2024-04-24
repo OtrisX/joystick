@@ -1,0 +1,42 @@
+.btn2{
+    color: white;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 2rem;
+    background: linear-gradient(#FFFFFF, #D7D7D7);
+    box-shadow: var(--default-bs);
+    box-shadow: 
+    inset -5px -10px 40px rgba(0, 0, 0, 0.05), 
+    inset 0px 0px 10px rgba(0, 0, 0, 0.3), 
+    inset 0px 0px 5px rgba(0, 0, 0, 0.5), 
+    inset 0px 0px 3px 1px rgba(0, 0, 0, 0.51), 
+    0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn2::before{
+    content: attr(bt);
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.btn2::after{
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(#FFFFFF11, #FFFFFF99);
+    translate: 30% -30%;
+    z-index: 1
+}

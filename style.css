@@ -1,0 +1,195 @@
+@import url(./css/btn-dark.css);
+@import url(./css/btn-light.css);
+@import url(./css/btn-square.css);
+@import url(./css/button.css);
+@import url(./css/analogic.css);
+@import url(./css/positions.css);
+@import url(./css/groups.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #e4e4e4; */
+    background: linear-gradient(#e4e4e4, #ddd);
+    /* background: linear-gradient(#e4e4e4, red); */
+    overflow: hidden;
+}
+
+.foto{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("./imgs/control.png"); */
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    /* background-color: #000000; */
+    /* background-color: #ffffff; */
+    z-index: -1;
+}
+
+
+.btn1{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.arrow{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 100%;
+    /* border: solid 5px black; */
+    /* box-shadow: inset 0px 0px 50px black; */
+}
+
+.arrow::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.arrow *{
+    position: absolute;
+    margin: auto;
+}
+
+.left{
+    top: 0px;
+    bottom: 0px;
+    width: 40%;
+    text-align: left;
+    border-radius: 5px 5px 0;
+}
+.right{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 40%;
+    border-radius: 0 5px 5px;
+}
+.up{
+    right: 0px;
+    left: 0px;
+    height: 40%;
+    border-radius: 5px 5px;
+}
+.down{
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 40%;
+    border-radius: 5px 5px;
+}
+
+
+
+
+
+
+
+
+.btn-effect::after{
+    content: '';
+    width: 70%;
+    height: 70%;
+    background: linear-gradient(45deg, transparent, #FFFFFF44);
+    border-radius: 100%;
+    position: absolute;
+    translate: 10% -10%;
+}
+
+.btn-effect::before{
+    content: '';
+    width: 90%;
+    height: 90%;
+    /* background: linear-gradient(45deg, transparent, #FFFFFF44); */
+    border-radius: 100%;
+    position: absolute;
+    /* translate: -10% 10%; */
+    border-right: solid 5px #FFFFFF15;
+    rotate: 130deg;
+}
+
+/* btn3 */
+
+.btn3{
+    background-color: black;
+    color: white;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-radius: 100%;
+    position: relative
+}
+
+
+.btn3_left{ border-top-left-radius: 25px; }
+.btn3_right{ border-top-right-radius: 25px; }
+
+
+.btn4{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 0px 3px rgb(63, 63, 63);
+}
+
+.group_l,
+.group_r,
+.group_c{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+}
+
+/* .group_r{ gap: 3px } */
+
+.group_r{ position: absolute; }
+.group_l{ position: absolute; }
+.group_c{ position: absolute; translate: -50% -40%; }
+
+
+.btn_painel{
+    position: absolute;
+    margin: auto;
+}
+
+

@@ -52,50 +52,24 @@ const buttons = {
 
 // ANALOGIC
 function setAnalogicLeft(x, y){
+    const distance = Math.sqrt(x**2 + y**2)
 
-    let length = Math.sqrt(x**2 + y**2 )
-    x = length > 1 ? x/length : x
-    y = length > 1 ? y/length : y
+    if (distance > 1) {
 
-    x = x > 0 ? x+0.01 : x
-    x = x < 1 ? x-0.01 : x
-
-    y = y > 0 ? y+0.01 : y
-    y = y < 1 ? y-0.01 : y
-
-    x = x > 1 ? 1 : x
-    y = y > 1 ? 1 : y
-
-    x = x < -1 ? -1 : x
-    y = y < -1 ? -1 : y
-
-    buttons.analogic_left.x = x
-    buttons.analogic_left.y = y
-
+        x /= distance 
+        y /= distance
+    }
     buttonHTML.analogic_left_ball.style.transform = `translate(${x*60}px, ${-y*60}px)`
 }
 
 function setAnalogicRight(x, y){
-    
-    let length = Math.sqrt(x * x + y * y);
+    const distance = Math.sqrt(x**2 + y**2)
 
-    x = (length > 1) ? x / length : x;
-    y = (length > 1) ? y / length : y;
+    if (distance > 1) {
 
-    x = x > 0 ? x+0.01 : x
-    x = x < 1 ? x-0.01 : x
-
-    y = y > 0 ? y+0.01 : y
-    y = y < 1 ? y-0.01 : y
-
-    x = x > 1 ? 1 : x
-    y = y > 1 ? 1 : y
-
-    x = x < -1 ? -1 : x
-    y = y < -1 ? -1 : y
-
-    buttons.analogic_right.x = x
-    buttons.analogic_right.y = y
+        x /= distance 
+        y /= distance
+    }
 
     buttonHTML.analogic_right_ball.style.transform = `translate(${x*60}px, ${-y*60}px)` 
 }
